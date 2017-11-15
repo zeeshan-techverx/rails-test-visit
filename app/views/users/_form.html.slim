@@ -1,0 +1,12 @@
+.row
+  .panel-group
+    .panel.panel-primary
+      .panel-heading
+  	    h5.mt-5 Import
+    .panel-body
+      = form_tag import_users_path, multipart: true 
+          .form-group
+            = file_field_tag :file, accept: ".csv", required: true, class: 'form-control'
+          .form-group
+        	  = submit_tag "Import CSV", id: 'submit', class: 'btn btn-primary'
+

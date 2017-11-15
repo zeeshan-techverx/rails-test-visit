@@ -1,0 +1,23 @@
+.row
+  .col-lg-4.border-right-hr
+    = render :partial => 'form'
+  .col-lg-8
+    h5.mt-5 List Users
+    table.table.table-striped.table-bordered.responsive
+      thead
+        tr
+          th Name
+          th Number
+          th Date
+          th Description
+      tbody
+        - @users.each do |user|
+          tr 
+            td= user.name
+            td= user.number
+            td= user.date
+            td= user.description
+javascript:
+  $('.table').dataTable({
+    responsive: true
+  });

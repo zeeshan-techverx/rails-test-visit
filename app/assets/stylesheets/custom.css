@@ -1,0 +1,19 @@
+body {
+	padding-top: 54px;
+	background: #eee url(http://subtlepatterns.com/patterns/sativa.png);
+}
+.table{
+	background: #fff;
+}
+.container .row{
+	margin-top: 10px;
+}
+.border-right-hr{
+	text-align: center;
+	border-right: #ccc 1px solid; 
+}
+@media (min-width: 992px) {
+	body {
+		padding-top: 56px;
+	}
+}

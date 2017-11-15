@@ -5,17 +5,10 @@ development:
     host: localhost
     username: postgres
     password: postgres
-staging:
+test:
     adapter: postgresql
     encoding: unicode
-    database: angel-test-app
-    host: localhost
-    username: postgres
-    password: postgres
-production:
-    adapter: postgresql
-    encoding: unicode
-    database: angel-test-app
+    database: angel-test-app-test
     host: localhost
     username: postgres
     password: postgres
