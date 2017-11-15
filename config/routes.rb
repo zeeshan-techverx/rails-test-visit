@@ -4,5 +4,5 @@ Rails.application.routes.draw do
         post 'import'
     end
   end
-  root 'welcome#index'
+  root 'users#index'
 end
